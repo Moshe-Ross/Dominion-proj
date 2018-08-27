@@ -1,0 +1,5 @@
+package dominion;
+
+public abstract class Cards {
+
+}

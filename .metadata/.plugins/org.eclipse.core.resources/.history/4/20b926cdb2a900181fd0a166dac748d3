@@ -1,0 +1,5 @@
+package dominion;
+
+public class Copper extends ResourceCard{
+	String img = new String("https://vignette.wikia.nocookie.net/dominioncg/images/b/b1/Copper2.jpg/revision/latest?cb=20100210171018");
+}
