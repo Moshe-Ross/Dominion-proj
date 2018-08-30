@@ -1,0 +1,16 @@
+package game;
+import java.util.LinkedList;
+import java.util.Stack;
+import dominion.*;
+
+public class Player {
+	private Stack<Card> deck;
+	private LinkedList<Card> discardPile;
+	private LinkedList<Card> hand;
+	
+	
+	public Player(){
+		discardPile.addFirst(Treasure.new Copper());		
+	}
+	
+}

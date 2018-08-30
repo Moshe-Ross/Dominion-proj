@@ -1,0 +1,7 @@
+package game;
+
+import dominion.Treasure;
+
+public class Copper extends Treasure {
+
+}

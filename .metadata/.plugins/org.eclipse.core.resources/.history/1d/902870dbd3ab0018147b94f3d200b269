@@ -1,0 +1,40 @@
+package game;
+import java.util.LinkedList;
+import java.util.Stack;
+import dominion.*;
+
+public class Player {
+	private Stack<Card> deck;
+	private LinkedList<Card> discardPile;
+	private LinkedList<Card> hand;
+
+
+	public Player(){
+		deck = new Stack<Card>();
+		discardPile = new LinkedList<Card>();
+		hand = new LinkedList<Card>();
+		
+		discardPile.addFirst(new Copper());
+		for (int i = 0; i < 3; i++){
+			discardPile.add(new Estate());
+			for (int j = 0; j < 2; j++)
+				discardPile.add(new Copper());
+		}
+
+		repopulateDeck();
+	}
+
+	private void repopulateDeck(){
+		while(!discardPile.isEmpty())
+			deck.push(discardPile.remove(((int)(Math.random())) + (discardPile.size()-1)));
+	}
+
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		while(!deck.empty()){
+			sb.append(deck.pop().getImg());
+			sb.append("\n");
+		}
+		return new String(sb);
+	}
+}

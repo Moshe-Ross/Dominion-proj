@@ -1,0 +1,35 @@
+package dominion;
+
+public class Victory extends Card{
+	
+	public static void estate(){
+		cost = 2;
+		victoryPoint = 1;
+		
+//		private File srcImg = new File("/dominion/src/dominion.images/estate.png");
+//		private Image img = new ImageIO.read(srcImg);	
+
+		value = 0;
+	}
+
+	public static void duchy(){
+		cost = 5;
+		victoryPoint = 3;
+		
+//		private File srcImg = new File("/dominion/src/dominion.images/duchy.png");
+//		private Image img = new ImageIO.read(srcImg);	
+	
+		value = 0;
+	}
+	
+	public static void province(){
+		cost = 8;
+		victoryPoint = 6;
+		
+//		private File srcImg = new File("/dominion/src/dominion.images/province.png");
+//		private Image img = new ImageIO.read(srcImg);	
+	
+		value = 0;
+	}
+
+}

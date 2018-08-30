@@ -1,0 +1,15 @@
+package dominion;
+
+public class Estate extends Victory{
+	public Estate(){
+		cost = 2;
+		victoryPoint = 1;
+
+		img = "/dominion/src/dominion.images/estate.png";
+		//		private File srcImg = new File("/dominion/src/dominion.images/estate.png");
+		//		private Image img = new ImageIO.read(srcImg);	
+
+		value = 0;
+	}
+}
+

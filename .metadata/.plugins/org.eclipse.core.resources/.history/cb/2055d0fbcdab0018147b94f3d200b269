@@ -1,0 +1,46 @@
+package dominion;
+//import java.awt.Image;
+//import java.io.File;
+//import javax.imageio.ImageIO;
+
+public abstract class Treasure extends Card{
+
+	public class Copper extends Treasure {
+		public Copper(){
+			cost = 0;
+			value = 1;
+
+			//			private File srcImg = new File("/dominion/src/dominion.images/copper.png");
+			//			private Image img = new ImageIO.read(srcImg);	
+
+			victoryPoint = 0;
+		}
+	}
+
+	public class Gold extends Treasure {
+
+		public Gold(){
+			cost = 6;
+			value = 3;
+
+			//		private File srcImg = new File("/dominion/src/dominion.images/gold.png");
+			//		private Image img = new ImageIO.read(srcImg);	
+
+			victoryPoint = 0;
+		}	
+
+	}
+
+	public class Silver extends Treasure {
+		public Silver(){
+			cost = 3;
+			value = 2;
+	
+			//		private File srcImg = new File("/dominion/src/dominion.images/silver.png");
+			//		private Image img = new ImageIO.read(srcImg);	
+	
+			victoryPoint = 0;
+		}
+	}
+
+}
